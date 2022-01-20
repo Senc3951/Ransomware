@@ -23,4 +23,4 @@ In order to decrypt all the files, each AES key needs to be decrypted using the 
 * Currently working on decryption and spreading.
 
 # Disclaimer
-### Use this project for educational purposes only. I am not responsible for anything you do with this project.
+## Use this project for educational purposes only. I am not responsible for anything you do with this project.
