@@ -5,11 +5,12 @@ In this project I created a Ransomware using C#.
 First the program will check if it's running on a testing machine like: VM, sandbox...
 If yes, it will destroy it self, else the process starts:
 
-The system reboots into safe mode (if it's not already in it), because on safe mode most drives are disabled then no AV works (Shadow copies don't work on this mode).
+The system reboots into safe mode (if it's not already in it), because on safe mode most drivers are disabled, which means that all AV's won't work (Shadow copies don't work on this mode).
 Then the program gets elevated privileges using UAC bypass to perform certain registry changes and access certain files.
 
 [The Ransomware will have the Server's RSA-512 PublicKey hardcoded]
-Once it has admin privileges, the program generates a unique RSA-512 pair, and encrypt the PrivateKey using the ServerPublicKey.
+
+Once it has admin privileges, the program generates a unique RSA-512 pair, and encrypts the ClientPrivateKey using the ServerPublicKey.
 Then it crawls through all the drives using MultiThreading, and each file is encrypted using a newly generated AES-256.
 
 Each AES key is then encrypted using the ClientPublicKey, and with that, the encryption ends, the program drops a Message on the desktop and destroys it self.
