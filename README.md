@@ -18,4 +18,4 @@ Each AES key is then encrypted using the ClientPublicKey, and with that, the enc
 In order to decrypt all the files, each AES key needs to be decrypted using the ClientPrivateKey, but as it is encrypted with the ServerPublicKey, the victim needs the ServerPrivateKey, and this is where the payment comes in.
 
 ## Notes
-Each file is encrypted using a process called RIPlace, which bypasses Windows-Controlled-Folder. (More on RIPlace)[https://www.bleepingcomputer.com/news/security/new-riplace-bypass-evades-windows-10-av-ransomware-protection/]
+Each file is encrypted using a process called RIPlace, which bypasses Windows-Controlled-Folder. [More on RIPlace](https://www.bleepingcomputer.com/news/security/new-riplace-bypass-evades-windows-10-av-ransomware-protection/)
