@@ -20,7 +20,7 @@ In order to decrypt all the files, each AES key needs to be decrypted using the 
 ## Notes
 * Since the program uses MultiThreading and asynchronous programming, iterating through ~600K files took around 7 seconds, so with the encryption it will take ~15 seconds.
 * Each file is encrypted using a process called RIPlace, which bypasses Windows-Controlled-Folder. [More on RIPlace](https://www.bleepingcomputer.com/news/security/new-riplace-bypass-evades-windows-10-av-ransomware-protection/)
-* While I tested each component individually, I never tested the Ransomware as a package, so I can't tell the Behaviour.
+* While I tested each feature separately, I never tested the Ransomware as a package, so I can't tell the Behaviour.
 * Currently working on decryption and spreading.
 
 # Disclaimer
