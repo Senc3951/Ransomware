@@ -3,7 +3,7 @@ In this project I created a Ransomware using C#.
 
 ## How it works
 First the program will check if it's running on a testing machine like: VM, sandbox...
-If yes, it will destroy it self, else the process starts:
+If yes, it will stop and delete itself, else the process starts:
 
 The system reboots into safe mode (if it's not already in it), because on safe mode most drivers are disabled, which means that all AV's won't work (Shadow copies don't work on this mode).
 Then the program gets elevated privileges using UAC bypass to perform certain registry changes and access certain files.
